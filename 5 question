@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+
+int main() {
+    int num;
+    float value;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    printf("Enter a float value: ");
+    scanf("%f", &value);
+
+    printf("\n entered integer: %d\n", num);
+    printf(" entered float value: %.2f\n", value);
+
+    return 0;
+}
