@@ -1,0 +1,10 @@
+#include <stdio.h>
+int Shramitha(){
+    printf("Niharika\n ");
+    printf("puttamma\n ");
+    printf("guru\n");
+}
+int main() {
+    Shramitha();
+    return 0;
+}
