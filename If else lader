@@ -6,7 +6,7 @@ int main() {
     printf("Enter your marks: ");
     scanf("%d", &marks);
 
-    if (marks >= 35) {
+    if (marks >= 40) {
         printf("You passed!\n");
     } else {
         printf("You failed!\n");
