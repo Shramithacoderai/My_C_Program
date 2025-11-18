@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    printf("Enter the values of a,b\n");
+    scanf("%d%d",&a,&b);
+    if(a>b){
+        printf("a is large\n");
+       } else
+            printf("b is large\n");
+        
+    
+
+    return 0;
+}
