@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    int rose_joy[5]={ 1,2,3,4,5};
+    printf("%d",rose_joy[4]);
+
+    return 0;
+}
