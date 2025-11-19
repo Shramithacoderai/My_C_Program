@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int rows,col;
+    printf("Enter rows and col\n");
+    scanf("%d%d",&rows,&col);
+    int a[rows][col],b[rows][col],c[rows][col];
+    for (int i=0;i<2;i++){
+    for(int j=0;j<2;j++){
+    printf("Enter elements for A\n");
+    scanf("%d",a[i][j]);
+        }
+    }
+    
+    for (int i=0;i<2;i++){
+    for(int j=0;j<2;j++){
+    printf("Enter elements for B matrix\n");
+    scanf("%d",b[i][j]);
+        }
+    }
+
+    for (int i=0;i<2;i++){
+    for(int j=0;j<2;j++){
+    printf("Enter elements\n");
+    scanf("%d",c[i][j]);
+        }
+    }
+}
