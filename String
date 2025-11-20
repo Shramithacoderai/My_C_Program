@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    char rajesh[20];
+    printf("Enter array");
+    scanf("%s",&rajesh);
+    printf("%s",rajesh);
+
+    return 0;
+}
