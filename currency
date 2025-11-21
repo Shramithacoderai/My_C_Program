@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+// Function to simulate swap (Call by Value)
+void simulateSwap(float a, float b) {
+    float temp = a;
+    a = b;
+    b = temp;
+
+    printf("\n--- Preview (Simulation Only) ---\n");
+    printf("After simulation:\n");
+    printf("Currency A = %.2f\n", a);
+    printf("Currency B = %.2f\n", b);
+}
+
+// Function to perform real swap (Call by Reference)
+void actualSwap(float *a, float *b) {
+    float temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    float currencyA, currencyB;
+
+    printf("Enter amount in Currency A: ");
+    scanf("%f", &currencyA);
+
+    printf("Enter amount in Currency B: ");
+    scanf("%f", &currencyB);
+
+    printf("\n--- Original Values ---\n");
+    printf("Currency A = %.2f\n", currencyA);
+    printf("Currency B = %.2f\n", currencyB);
+
+    // Call by Value (Simulation)
+    simulateSwap(currencyA, currencyB);
+
+    printf("\n--- After Simulation (Original Values Remain Same) ---\n");
+    printf("Currency A = %.2f\n", currencyA);
+    printf("Currency B = %.2f\n\n", currencyB);
+
+    // Call by Reference (Actual Exchange)
+    actualSwap(&currencyA, &currencyB);
+
+    printf("--- After Actual Exchange (Values Swapped) ---\n");
+    printf("Currency A = %.2f\n", currencyA);
+    printf("Currency B = %.2f\n", currencyB);
+
+    return 0;
+}
