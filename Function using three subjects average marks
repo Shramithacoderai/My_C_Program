@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+// Function to check pass or fail
+int isPassed(int m1, int m2, int m3) {
+    if(m1 >= 40 && m2 >= 40 && m3 >= 40)
+        return 1;  // Passed
+    else
+        return 0;  // Failed
+}
+
+int main() {
+    int sub1, sub2, sub3;
+    float average;
+
+    // Input marks
+    printf("Enter marks for three subjects: ");
+    scanf("%d %d %d", &sub1, &sub2, &sub3);
+
+    // Calculate average
+    average = (sub1 + sub2 + sub3) / 3.0;
+
+    // Display result
+    printf("Average Marks: %.2f\n", average);
+
+    if(isPassed(sub1, sub2, sub3))
+        printf("Result: PASS\n");
+    else
+        printf("Result: FAIL\n");
+
+    return 0;
+}
