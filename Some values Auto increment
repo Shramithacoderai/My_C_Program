@@ -1,0 +1,24 @@
+#include <stdio.h>
+enum operation{
+    Add = 1,
+    Subtract,
+    Multiply,
+    Divide
+};
+   int main (){
+       enum operation op;
+       printf("Enter operation (1-4):");
+       scanf("%d",&op);
+      
+     if (op == Add)
+         printf("you chose Addition ");
+     else if(op == Subtract)
+         printf("you chose Subtraction ");
+     else
+         printf("Other operation");
+         
+         return 0;
+     }
+    
+
+
